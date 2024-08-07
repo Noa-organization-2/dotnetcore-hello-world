@@ -3,19 +3,20 @@ using Newtonsoft.Json;
 
 namespace yello
 {
-
-    class Animal {
+    class Animal
+    {
         public string type;
         public string name;
 
-        public void setType(string newType){
+        public void setType(string newType)
+        {
             type = newType;
         }
 
-        public void setName(string newName){
+        public void setName(string newName)
+        {
             name = newName;
         }
-
     }
 
     class Program
@@ -26,7 +27,7 @@ namespace yello
             animal.setType("Pedobear");
             animal.setName("Jorma");
 
-            var animalJson = JsonConvert.SerializeObject(animal);
+            var animalJson = JsonConvert.SerializeObject(animal).blahblahblah();
 
             Console.WriteLine(animalJson);
         }
